@@ -1,0 +1,182 @@
+@mixin locn{
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 65px;
+    top: 8px;
+    background: {
+    repeat:no-repeat;
+    size: 25px;
+    position: center;
+    }
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+body{
+    background:{
+    image: url("../img/878bd257304b47db9b9f733129383534.jpg");
+    repeat: no-repeat;
+    size: cover;
+    }
+    width: 100%;
+    height: auto;
+}
+.container{
+    margin-top: 6%;
+    position: relative;
+}
+.center{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    background:{
+       color: rgba(255, 255, 255, .5);
+    }
+    border-radius: 15px;
+    box-shadow: 0 0 18px #333;
+    display: block;
+}
+.locn-1{
+    background:url("../img/登录.png") ;
+    @include locn;
+}
+.locn-2{
+    background: url("../img/密码.png");
+    @include locn;
+}
+span{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+.logon-center header{
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 30px;
+    color:cornsilk;
+    font-size: 25px;
+}
+.center header{
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 80px;
+    color:cornsilk;
+    font-size: 25px;
+}
+.main{
+    text-align: center;
+}
+.main input{
+    width: 223.5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+}
+.main button{
+    margin-top: 30px;
+    padding-left: 0;
+    background-color: #83acf1;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 223.5px;
+    height: 40px;
+}
+.main button:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+.main input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+.logon-center{
+    width: 400px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%);
+    left: 50%;
+    background:{
+        color: rgba(255, 255, 255, .5);
+    }
+    border-radius: 15px;
+    box-shadow: 0 0 18px #333;
+    display: none;
+}
+.locn-3{
+    background:url("../img/登录.png") ;
+    @include locn;
+}
+.locn-4{
+    background:url("../img/密码.png") ;
+    @include locn;
+}
+.locn-5{
+    background:url("../img/邮箱.png") ;
+    @include locn;
+}
+.locn-6{
+    background:url("../img/验证码.png") ;
+    @include locn;
+}
+.logon-main{
+    text-align: center;
+}
+.logon-main input{
+    width: 223.5px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+}
+#logonbtn{
+    margin: 25px 0px;
+    padding-left: 0;
+    background-color: #83acf1;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 223.5px;
+    height: 40px;
+}
+#sentbtn{
+    width: 35px;
+    background-color: #83acf1;
+    font-weight: bold;
+}
+#sentbtn:hover{
+        box-shadow: 2px 2px 5px #555;
+        background-color: #7799d4;
+}
+#logonbtn:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #7799d4;
+}
+.logon-main input:hover{
+    box-shadow: 2px 2px 5px #555;
+    background-color: #ddd;
+}
+#signin{
+    display: block;
+    text-align: center;
+    font-size: 5px;
+    color:blue;
+    cursor: pointer;
+}
+#logon{
+    display: block;
+    text-align: center;
+    font-size: 5px;
+    color:blue;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#registerInput{
+    width: 180px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录注册</title>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="center">
+				<header>
+					<h2>登录</h2>
+				</header>
+				<div class="main">
+						<span>
+							用户名:&nbsp;
+							<li class="locn-1"></li>
+							<input class="landInput" type="text" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\.\-\——\=\Π\+\$]/g,'')" placeholder="用户名">
+						</span>
+						<span>
+							&nbsp;&nbsp;密码&nbsp;:&nbsp;
+							<li class="locn-2"></li>
+							<input class="landInput" type="password" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\.\-\——\=\Π\+\$]/g,'')" placeholder="密码">
+						</span>
+						<button onclick="land()">登录</button>
+						<span id="logon">注册</span>
+				</div>
+			</div>
+			<div class="logon-center">
+				<header>
+					<h2>注册</h2>
+				</header>
+				<div class="logon-main">
+					<form>
+						<span>
+							用户名:&nbsp;
+							<li class="locn-3"></li>
+							<input class="registerInput" type="text" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\.\-\——\=\Π\+\$]/g,'')" placeholder="用户名">
+						</span>
+						<span>
+							&nbsp;&nbsp;密码&nbsp;:&nbsp;
+							<li class="locn-4"></li>
+							<input class="registerInput" type="text" onkeyup="value=value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\.\-\——\=\Π\+\$]/g,'')" placeholder="密码">
+						</span>
+						<span>
+							&nbsp;&nbsp;邮箱&nbsp;:&nbsp;
+							<li class="locn-5"></li>
+							<input class="registerInput" type="text" placeholder="邮箱">
+						</span>
+						<span>
+							验证码:&nbsp;
+							<li class="locn-6"></li>
+							<input class="registerInput" style="width: 180px;" type="text" οnkeyup="value=value.replace(/[^\a-z\0-9]/g,'') " placeholder="验证码">&nbsp;
+							<button id="sentbtn" onclick="sent()">发送</button>
+						</span>
+						<button id="logonbtn" onclick="register()">注册</button>
+					</form>
+					<span id="signin">登录</span>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.6.4.js" type="text/javascript"></script>
+		<script src="js/new_file.js" type="text/javascript"></script>
+	</body>
+</html>
