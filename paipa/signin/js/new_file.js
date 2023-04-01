@@ -1,14 +1,14 @@
 let signin = document.getElementById("signin");
 let logon = document.getElementById("logon");
 let center = document.getElementsByClassName("center")[0];
-let zhuce_center = document.getElementsByClassName("zhuce-center")[0];
+let logon_center = document.getElementsByClassName("logon-center")[0];
 
 logon.onclick = function () {
     center.style.display = "none";
-    zhuce_center.style.display = "block";
+    logon_center.style.display = "block";
 }
 signin.onclick = function () {
-    zhuce_center.style.display = "none";
+    logon_center.style.display = "none";
     center.style.display = "block";
 }
 let landInput =document.getElementsByClassName('landInput');
